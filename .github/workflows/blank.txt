@@ -73,8 +73,8 @@ CGTN阿语 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3
 咪咕视频 4M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226027/index.m3u8
 咪咕视频 4M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226941/index.m3u8
 咪咕视频 2M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226840/index.m3u8
-#EXTINF:-1 group-title="辽宁移动" 辽宁公共 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226766/index.m3u8
-#EXTINF:-1 group-title="辽宁移动" 辽宁经济 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226735/index.m3u8
+#EXTINF:-1 group-title="辽宁移动"，辽宁公共 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226766/index.m3u8
+#EXTINF:-1 group-title="辽宁移动"，辽宁经济 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226735/index.m3u8
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226179/index.m3u8
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226759/index.m3u8
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226920/index.m3u8
