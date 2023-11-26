@@ -1,3 +1,4 @@
+央视频道,#genre#
 CCTV1 3M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226190/index.m3u8
 CCTV1 4M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221225977/index.m3u8
 CCTV1 7.5M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226721/index.m3u8
@@ -30,6 +31,8 @@ CGTN 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227
 CGTN俄语 8M1080,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227096/index.m3u8
 CGTN法语 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227148/index.m3u8
 CGTN阿语 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227151/index.m3u8
+
+卫视频道,#genre#
 东方卫视 3M1080,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226187/index.m3u8
 东方卫视 4M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221225976/index.m3u8
 东方卫视 4M1080,http://39.135.129.172/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221225976/index.m3u8
@@ -73,8 +76,24 @@ CGTN阿语 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3
 咪咕视频 4M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226027/index.m3u8
 咪咕视频 4M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226941/index.m3u8
 咪咕视频 2M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226840/index.m3u8
+
+辽宁频道,#genre#
 辽宁公共 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226766/index.m3u8
 辽宁经济 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226735/index.m3u8
+辽宁体育 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226764/index.m3u8
+辽宁北方 576,http://39.135.129.172/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226755/index.m3u8
+辽宁影视剧 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226738/index.m3u8
+辽宁教育青少 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226763/index.m3u8
+辽宁生活 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226761/index.m3u8
+辽宁移动电视 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226982/index.m3u8
+辽宁都市 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226760/index.m3u8
+辽宁宜佳购物 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226884/index.m3u8
+营口新闻综合 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226995/index.m3u8
+北京家有购物 576,http://39.135.129.172/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226985/index.m3u8
+聚鲨环球精选 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227044/index.m3u8
+阜新综合 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000279
+
+央视标清,#genre#
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226179/index.m3u8
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226759/index.m3u8
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226920/index.m3u8
@@ -98,6 +117,9 @@ CCTV17 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/32212268
 中国教育1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226732/index.m3u8
 中国教育3 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226950/index.m3u8
 中国教育4 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226940/index.m3u8
+
+
+卫视标清,#genre#
 东南卫视 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226784/index.m3u8
 东方卫视 540,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226938/index.m3u8
 东方卫视 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226872/index.m3u8
@@ -151,6 +173,8 @@ CCTV17 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/32212268
 青海安多卫视 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227160/index.m3u8
 广东嘉佳卡通 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226744/index.m3u8
 江苏优漫卡通 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226768/index.m3u8
+
+
 NNM家庭理财 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226754/index.m3u8
 NNM新动漫 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226818/index.m3u8
 NNM电子体育 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226871/index.m3u8
