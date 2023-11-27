@@ -27,10 +27,6 @@ CCTV16 8M1080,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/32212
 CCTV16 8M1080,http://39.135.129.172/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227074/index.m3u8
 CCTV16 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226880/index.m3u8
 CCTV17 7.5M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226841/index.m3u8
-CGTN 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227090/index.m3u8
-CGTN俄语 8M1080,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227096/index.m3u8
-CGTN法语 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227148/index.m3u8
-CGTN阿语 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227151/index.m3u8
 CCTV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001068/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 CCTV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001331/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 CCTV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001018/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
@@ -208,7 +204,6 @@ CCTV17,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226198/index.m3u8
 辽宁都市 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226760/index.m3u8
 辽宁宜佳购物 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226884/index.m3u8
 营口新闻综合 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226995/index.m3u8
-聚鲨环球精选 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227044/index.m3u8
 辽东文化,rtmp://jsylivealone.iqilu.com/lijin/lijin_tv02
 辽宁北方,http://39.134.61.219/PLTV/88888888/224/3221226865/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
@@ -233,8 +228,6 @@ playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF
 playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000059
 鞍山新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?
 playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000274
-阜新新闻,http://httplive.slave.bfgd.com.cn:14311/playurl?
-playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000279
 
 央视标清,#genre#
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226179/index.m3u8
@@ -319,7 +312,7 @@ CCTV17 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/32212268
 
 
 数字频道,#genre#
-及时科教 ,https://live.goodiptv.club/api/bestv.php?id=bbdh8m/8000000
+老何提醒随时更变 ,https://live.goodiptv.club/api/bestv.php?id=bbdh8m/8000000
 时尚服装,http://player2.juyun.tv/camera/80238159.m3u8
 NNM家庭理财 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226754/index.m3u8
 NNM新动漫 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226818/index.m3u8
@@ -402,14 +395,6 @@ playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF
 央视台球,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002496/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 央视台球,http://211.137.115.109:80/gitv_live/G_TAIQIU-CQ/G_TAIQIU-CQ.m3u8
 央视台球,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226956/index.m3u8
-CGTN,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001024/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-CGTN,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001024/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-CGTN阿语,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002826/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
-CGTN阿语,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002826/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
-CGTN法语,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002827/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-CGTN法语,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002827/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-CGTN西语,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002716/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-CGTN西语,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002716/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 发现之旅,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001314/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 发现之旅,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001314/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 发现之旅,http://211.137.115.109:80/gitv_live/G_FAXIANZL/G_FAXIANZL.m3u8
@@ -509,7 +494,6 @@ CCTVNEWS,http://211.137.115.109:80/gitv_live/G_CCTV-NEWS/G_CCTV-NEWS.m3u8
 百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225848/index.m3u8
 百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225849/index.m3u8
 百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225847/index.m3u8
-BesTV斗地主,http://39.134.32.102:6610/270000001111/1110000382/index.m3u8?IASHttpSessionId=OTT
 
 体育频道,#genre#
 24小时体育台,http://tv.ye23.win/iptv2025ok@gmail.com/2211af/ws.php?id=24
