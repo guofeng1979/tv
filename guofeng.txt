@@ -31,6 +31,125 @@ CGTN 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227
 CGTN俄语 8M1080,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227096/index.m3u8
 CGTN法语 8M1080,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227148/index.m3u8
 CGTN阿语 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227151/index.m3u8
+CCTV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001068/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001331/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001018/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV1,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001068/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV1,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001331/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV1,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001018/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV1,http://211.137.115.109:80/gitv_live/G_CCTV-1-MD/G_CCTV-1-MD.m3u8
+CCTV1,http://211.137.115.109:80/gitv_live/CCTV-1-HD/CCTV-1-HD.m3u8
+CCTV1,http://211.137.115.109:80/gitv_live/G_CCTV-1/G_CCTV-1.m3u8
+CCTV1,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226231/index.m3u8
+CCTV2,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001293/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV2,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001332/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV2,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001021/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV2,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001293/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV2,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001332/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV2,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001021/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV2,http://211.137.115.109:80/gitv_live/G_CCTV-2-MD/G_CCTV-2-MD.m3u8
+CCTV2,http://211.137.115.109:80/gitv_live/G_CCTV-2-HD/G_CCTV-2-HD.m3u8
+CCTV2,http://211.137.115.109:80/gitv_live/G_CCTV-2/G_CCTV-2.m3u8
+CCTV2,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226195/index.m3u8
+CCTV3,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001598/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV3,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001598/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV3,http://211.137.115.109:80/gitv_live/G_CCTV-3-HD/G_CCTV-3-HD.m3u8
+CCTV3,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226397/index.m3u8
+CCTV4,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001333/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV4,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001015/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CCTV4,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001333/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV4,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001015/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CCTV4,http://211.137.115.109:80/gitv_live/G_CCTV-4-MD/G_CCTV-4-MD.m3u8
+CCTV4,http://211.137.115.109:80/gitv_live/G_CCTV-4-HD/G_CCTV-4-HD.m3u8
+CCTV4,http://211.137.115.109:80/gitv_live/CCTV-4/CCTV-4.m3u8
+CCTV4,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226191/index.m3u8
+CCTV5,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001850/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV5,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001850/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV5,http://211.137.115.109:80/gitv_live/G_CCTV-5-HD/G_CCTV-5-HD.m3u8
+CCTV5,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226395/index.m3u8
+CCTV5+,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001008/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV5+,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001334/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV5+,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001008/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV5+,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001334/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV5+,http://211.137.115.109:80/gitv_live/G_CCTV-5PLUS-MD/G_CCTV-5PLUS-MD.m3u8
+CCTV5+,http://211.137.115.109:80/gitv_live/G_CCTV-5PLUS/G_CCTV-5PLUS.m3u8
+CCTV5+,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226221/index.m3u8
+CCTV6,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001275/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV6,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001859/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV6,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001275/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV6,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001859/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV6,http://211.137.115.109:80/gitv_live/G_CCTV-6-HD/G_CCTV-6-HD.m3u8
+CCTV6,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226393/index.m3u8
+CCTV7,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001291/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV7,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001017/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV7,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001325/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV7,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001291/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV7,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001017/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV7,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001325/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV7,http://211.137.115.109:80/gitv_live/G_CCTV-7-HD/G_CCTV-7-HD.m3u8
+CCTV7,http://211.137.115.109:80/gitv_live/CCTV-7/CCTV-7.m3u8
+CCTV7,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226192/index.m3u8
+CCTV8,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001869/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV8,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001869/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV8,http://211.137.115.109:80/gitv_live/G_CCTV-8-HD/G_CCTV-8-HD.m3u8
+CCTV8,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226391/index.m3u8
+CCTV9,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001294/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV9,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001023/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV9,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001294/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV9,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001023/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV9,http://211.137.115.109:80/gitv_live/G_CCTV-9-HD/G_CCTV-9-HD.m3u8
+CCTV9,http://211.137.115.109:80/gitv_live/G_CCTV-9/G_CCTV-9.m3u8
+CCTV9,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226197/index.m3u8
+CCTV10,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001288/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV10,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001011/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV10,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001288/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV10,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001011/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV10,http://211.137.115.109:80/gitv_live/G_CCTV-10-HD/G_CCTV-10-HD.m3u8
+CCTV10,http://211.137.115.109:80/gitv_live/CCTV-10/CCTV-10.m3u8
+CCTV10,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226189/index.m3u8
+CCTV11,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001327/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV11,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001012/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV11,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001327/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV11,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001012/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV11,http://211.137.115.109:80/gitv_live/CCTV-11/CCTV-11.m3u8
+CCTV11,http://211.137.115.109:80/gitv_live/G_CCTV-11-HQ/G_CCTV-11-HQ.m3u8
+CCTV11,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226240/index.m3u8
+CCTV12,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001289/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV12,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001013/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV12,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001289/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV12,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001013/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV12,http://211.137.115.109:80/gitv_live/G_CCTV-12-HD/G_CCTV-12-HD.m3u8
+CCTV12,http://211.137.115.109:80/gitv_live/CCTV-12/CCTV-12.m3u8
+CCTV12,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226190/index.m3u8
+CCTV13,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001328/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV13,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001014/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV13,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001328/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV13,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001014/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV13,http://211.137.115.109:80/gitv_live/CCTV-13/CCTV-13.m3u8
+CCTV13,http://211.137.115.109:80/gitv_live/G_CCTV-13-HQ/G_CCTV-13-HQ.m3u8
+CCTV13,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226233/index.m3u8
+CCTV14,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001292/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV14,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001019/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV14,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001292/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV14,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001019/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV14,http://211.137.115.109:80/gitv_live/G_CCTV-14-HD/G_CCTV-14-HD.m3u8
+CCTV14,http://211.137.115.109:80/gitv_live/G_CCTV-14/G_CCTV-14.m3u8
+CCTV14,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226193/index.m3u8
+CCTV15,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001020/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV15,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001020/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV15,http://211.137.115.109:80/gitv_live/G_CCTV-15/G_CCTV-15.m3u8
+CCTV15,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225785/index.m3u8
+CCTV16,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002395/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CCTV16,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002395/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CCTV16,http://211.137.115.109:80/gitv_live/G_CCTV-16-HQ/G_CCTV-16-HQ.m3u8
+CCTV16,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226921/index.m3u8
+CCTV17,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001295/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV17,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001301/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV17,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001295/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV17,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001301/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CCTV17,http://211.137.115.109:80/gitv_live/G_CCTV-17-HD/G_CCTV-17-HD.m3u8
+CCTV17,http://211.137.115.109:80/gitv_live/G_CCTV-17/G_CCTV-17.m3u8
+CCTV17,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226198/index.m3u8
 
 卫视频道,#genre#
 东方卫视 3M1080,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226187/index.m3u8
@@ -90,10 +209,33 @@ CGTN阿语 8M1080,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3
 辽宁宜佳购物 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226884/index.m3u8
 营口新闻综合 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226995/index.m3u8
 聚鲨环球精选 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221227044/index.m3u8
-阜新综合 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000279
-大连新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000273
-沈阳新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000059
-鞍山新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000274
+辽东文化,rtmp://jsylivealone.iqilu.com/lijin/lijin_tv02
+辽宁北方,http://39.134.61.219/PLTV/88888888/224/3221226865/index.m3u8
+辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
+辽宁北方,http://42.176.185.28:9901/tsfile/live/1011_1.m3u8
+辽宁都市,http://39.134.61.219/PLTV/88888888/224/3221226914/index.m3u8
+辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
+辽宁公共,http://httplive.slave.bfgd.com.cn:14311/playurl?
+
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000077
+辽宁教育,http://39.134.61.218/PLTV/88888888/224/3221226863/index.m3u8
+辽宁教育,http://42.176.185.28:9901/tsfile/live/1008_1.m3u8
+辽宁教育,http://39.134.61.219/PLTV/88888888/224/3221226863/index.m3u8
+辽宁生活,http://42.176.185.28:9901/tsfile/live/1006_1.m3u8
+辽宁生活,http://39.134.61.218/PLTV/88888888/224/3221226918/index.m3u8
+辽宁生活,http://39.134.61.219/PLTV/88888888/224/3221226918/index.m3u8
+辽宁体育,http://39.134.61.218/PLTV/88888888/224/3221226916/index.m3u8
+辽宁体育,http://39.134.61.219/PLTV/88888888/224/3221226916/index.m3u8
+阜新综合 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000279
+大连新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000273
+沈阳新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000059
+鞍山新闻综合 4M1080,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000274
+阜新新闻,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000279
 
 央视标清,#genre#
 CCTV1 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226179/index.m3u8
@@ -178,27 +320,225 @@ CCTV17 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/32212268
 
 
 数字频道,#genre#
+及时科教 ,https://live.goodiptv.club/api/bestv.php?id=bbdh8m/8000000
+时尚服装,http://player2.juyun.tv/camera/80238159.m3u8
 NNM家庭理财 576,http://39.135.129.164/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226754/index.m3u8
 NNM新动漫 576,http://39.135.129.162/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226818/index.m3u8
 NNM电子体育 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226871/index.m3u8
 NNM网络棋牌 576,http://39.135.129.166/hwottcdn.ln.chinamobile.com/PLTV/3/224/3221226770/index.m3u8
-CCTV世界地理 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000177
-CCTV女性时尚 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000176
-CCTV文化精品 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000178
-CCTV电视指南 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000164
-CCTV证券资讯 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000310
-CGTN 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000134
-CGTN 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000305
-CGTN俄语 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000309
-CGTN法语 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000307
-CGTN西语 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000306
-CGTN阿语 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000308
-中国天气 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000160
-中央新影发现之旅 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000151
-中央新影新科动漫 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000218
-中央新影老故事 576,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000166
+CCTV移动电视,http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/649e19038fa74514ab3f00febbcd6de0/1200.m3u8
+CCTV中央文化精品,http://111.20.40.164/PLTV/88888893/224/3221226981/index.m3u8
+CCTV中央文化精品,http://111.20.40.165/PLTV/88888893/224/3221226981/index.m3u8
+CCTV中央文化精品,http://111.20.40.166/PLTV/88888893/224/3221226981/index.m3u8
+CCTV中央文化精品,http://111.20.40.167/PLTV/88888893/224/3221226981/index.m3u8
+CCTV风云音乐,http://111.20.40.162/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.163/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.164/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.165/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.166/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.167/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.170/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.171/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.172/PLTV/88888893/224/3221226953/index.m3u8
+CCTV风云音乐,http://111.20.40.173/PLTV/88888893/224/3221226953/index.m3u8
+CCTV世界地理 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000177
+CCTV女性时尚 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000176
+CCTV文化精品 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000178
+CCTV电视指南 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000164
+中国天气 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000160
+中央新影发现之旅 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000151
+中央新影新科动漫 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000218
+中央新影老故事 576,http://httplive.slave.bfgd.com.cn:14311/playurl?
+playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000166
+兵器科技,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002515/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+兵器科技,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002515/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+兵器科技,http://211.137.115.109:80/gitv_live/G_BINGQIKJ-CQ/G_BINGQIKJ-CQ.m3u8
+兵器科技,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226975/index.m3u8
+第一剧场,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002498/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+第一剧场,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002498/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+第一剧场,http://211.137.115.109:80/gitv_live/G_DIYIJC-CQ/G_DIYIJC-CQ.m3u8
+第一剧场,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226959/index.m3u8
+电视指南,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002545/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+电视指南,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002545/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+电视指南,http://211.137.115.109:80/gitv_live/G_DIANSHIZN-CQ/G_DIANSHIZN-CQ.m3u8
+电视指南,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226987/index.m3u8
+风云剧场,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002505/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+风云剧场,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002505/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+风云剧场,http://211.137.115.109:80/gitv_live/G_FENGYUNJC-CQ/G_FENGYUNJC-CQ.m3u8
+风云剧场,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226950/index.m3u8
+风云音乐,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002525/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+风云音乐,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002525/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+风云音乐,http://211.137.115.109:80/gitv_live/G_FENGYUNYY-CQ/G_FENGYUNYY-CQ.m3u8
+风云音乐,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226953/index.m3u8
+风云足球,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002499/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+风云足球,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002499/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+风云足球,http://211.137.115.109:80/gitv_live/G_FENGSHANGZQ-CQ/G_FENGSHANGZQ-CQ.m3u8
+风云足球,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226984/index.m3u8
+高尔夫网球,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002497/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+高尔夫网球,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002497/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+高尔夫网球,http://211.137.115.109:80/gitv_live/G_CCTV-GOLF-CQ/G_CCTV-GOLF-CQ.m3u8
+高尔夫网球,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226978/index.m3u8
+怀旧剧场,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002495/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+怀旧剧场,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002495/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+怀旧剧场,http://211.137.115.109:80/gitv_live/G_HUAIJIUJC-CQ/G_HUAIJIUJC-CQ.m3u8
+怀旧剧场,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226972/index.m3u8
+女性时尚,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002475/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+女性时尚,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001316/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+女性时尚,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002475/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+女性时尚,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001316/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+女性时尚,http://211.137.115.109:80/gitv_live/G_NVXINGSS-CQ/G_NVXINGSS-CQ.m3u8
+女性时尚,http://211.137.115.109:80/gitv_live/G_NVXINGSS/G_NVXINGSS.m3u8
+女性时尚,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226969/index.m3u8
+世界地理,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002485/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+世界地理,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002485/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+世界地理,http://211.137.115.109:80/gitv_live/G_SHIJIEDL-CQ/G_SHIJIEDL-CQ.m3u8
+央视台球,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002496/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+央视台球,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002496/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+央视台球,http://211.137.115.109:80/gitv_live/G_TAIQIU-CQ/G_TAIQIU-CQ.m3u8
+央视台球,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226956/index.m3u8
+CGTN,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001024/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CGTN,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001024/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CGTN阿语,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002826/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CGTN阿语,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002826/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CGTN法语,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002827/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CGTN法语,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002827/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CGTN西语,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002716/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CGTN西语,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002716/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+发现之旅,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001314/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+发现之旅,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001314/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+发现之旅,http://211.137.115.109:80/gitv_live/G_FAXIANZL/G_FAXIANZL.m3u8
+发现之旅,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226235/index.m3u8
+老故事,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001315/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+老故事,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001315/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+老故事,http://211.137.115.109:80/gitv_live/G_LAOGUSHI/G_LAOGUSHI.m3u8
+老故事,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226236/index.m3u8
+CETV1,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001063/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CETV1,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001063/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CETV1,http://211.137.115.109:80/gitv_live/G_CETV-1/G_CETV-1.m3u8
+CETV2,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001064/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CETV2,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001064/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CETV2,http://211.137.115.109:80/gitv_live/G_CETV-2/G_CETV-2.m3u8
+CETV3,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001309/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CETV3,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001309/index.m3u9?virtualDomain=yinhe.live_hls.zte.com
+CETV3,http://211.137.115.109:80/gitv_live/G_CETV-3/G_CETV-3.m3u8
+CETV4,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001308/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CETV4,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001308/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CETV4,http://211.137.115.109:80/gitv_live/G_CETV-4/G_CETV-4.m3u8
+山东教育,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001317/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+山东教育,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001317/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+山东教育,http://211.137.115.109:80/gitv_live/G_SDETV/G_SDETV.m3u8
+山东教育,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226238/index.m3u8
+CHC动作电影,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002055/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CHC动作电影,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002055/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CHC动作电影,http://211.137.115.109:80/gitv_live/G_CHCDZDY/G_CHCDZDY.m3u8
+CHC动作电影,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226465/index.m3u8
+CHC高清电影,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002065/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CHC高清电影,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002065/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CHC高清电影,http://211.137.115.109:80/gitv_live/G_CHCGQDY/G_CHCGQDY.m3u8
+CHC高清电影,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226463/index.m3u8
+CHC家庭影院,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002085/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CHC家庭影院,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002085/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+CHC家庭影院,http://211.137.115.109:80/gitv_live/G_CHCJTYY/G_CHCJTYY.m3u8
+CHC家庭影院,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226462/index.m3u8
+北京纪实科教,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001329/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+北京纪实科教,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001329/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+上海纪实人文,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001330/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+上海纪实人文,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001330/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+都市剧场,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002108/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+都市剧场,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002108/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+都市剧场,http://211.137.115.109:80/gitv_live/G_DUSHIJC/G_DUSHIJC.m3u8
+金色学堂,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002675/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金色学堂,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002675/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金色学堂,http://211.137.115.109:80/gitv_live/G_JINSEXT-HQ/G_JINSEXT-HQ.m3u8
+乐游,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002157/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+乐游,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002157/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+游戏风云,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002295/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+游戏风云,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002295/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+茶频道,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002305/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+茶频道,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002305/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金鹰纪实,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001699/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金鹰纪实,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001699/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金鹰纪实,http://211.137.115.109:80/gitv_live/G_JINYINGJS-HD/G_JINYINGJS-HD.m3u8
+快乐垂钓,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002264/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+快乐垂钓,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002264/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+快乐垂钓,http://211.137.115.109:80/gitv_live/G_KLCD-HD/G_KLCD-HD.m3u8
+金鹰卡通,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001067/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金鹰卡通,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001067/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+金鹰卡通,http://211.137.115.109:80/gitv_live/G_JINYING/G_JINYING.m3u8
+优漫卡通,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001065/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+优漫卡通,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001065/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+优漫卡通,http://211.137.115.109:80/gitv_live/G_YOUMAN/G_YOUMAN.m3u8
+优漫卡通,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225795/index.m3u8
+嘉佳卡通,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001310/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+嘉佳卡通,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001310/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+嘉佳卡通,http://211.137.115.109:80/gitv_live/G_JIAJIA/G_JIAJIA.m3u8
+嘉佳卡通,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226227/index.m3u8
+财富天下,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001689/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+财富天下,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000001689/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+财富天下,http://211.137.115.109:80/gitv_live/G_CAIFUTIANXIA/G_CAIFUTIANXIA.m3u8
+CCTVNEWS,http://211.137.115.109:80/gitv_live/G_CCTV-NEWS/G_CCTV-NEWS.m3u8
+央视文化精品,http://211.137.115.109:80/gitv_live/G_CCTV-WENHUA-CQ/G_CCTV-WENHUA-CQ.m3u8
+央视文化精品,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226981/index.m3u8
+北京冬奥纪实,http://211.137.115.109:80/gitv_live/G_BEIJINGJS-HD/G_BEIJINGJS-HD.m3u8
+上海纪实,http://211.137.115.109:80/gitv_live/G_SHANGHAIJS-HD/G_SHANGHAIJS-HD.m3u8
+新娱乐,http://211.137.115.109:80/gitv_live/G_XINYULE/G_XINYULE.m3u8
+职业指南,http://211.137.115.109:80/gitv_live/G_ZHIYEZN/G_ZHIYEZN.m3u8
+中国交通频道,http://211.137.115.109:80/gitv_live/G_ZHONGGUOJT/G_ZHONGGUOJT.m3u8
+吉林篮球,http://211.137.115.109:80/gitv_live/G_LANQIU/G_LANQIU.m3u8
+炫动卡通,http://211.137.115.109:80/gitv_live/G_XUANDONG/G_XUANDONG.m3u8
+纪实人文,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226230/index.m3u8
+奕坦春秋,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226245/index.m3u8
+北京卡酷,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225743/index.m3u8
+冬奥纪实,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226232/index.m3u8
+哒啵电竞,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226951/index.m3u8
+哒啵赛事,http://dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226954/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225835/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225837/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225846/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225850/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225834/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225836/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225839/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225845/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225848/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225849/index.m3u8
+百视通体育 720,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225847/index.m3u8
+BesTV斗地主,http://39.134.32.102:6610/270000001111/1110000382/index.m3u8?IASHttpSessionId=OTT
+
+体育频道,#genre#
+24小时体育台,http://tv.ye23.win/iptv2025ok@gmail.com/2211af/ws.php?id=24
+纬来体育,https://cloud.yumixiu768.com/tmp/123.m3u8
+快乐垂钓,http://tv.ye23.win/iptv2025ok@gmail.com/2211af/ws.php?id=218
+先锋乒羽,http://tv.ye23.win/iptv2025ok@gmail.com/2211af/ws.php?id=329
 
 香港频道,#genre#
-凤凰中文 720,http://tv.sason.xyz/proxy/fh.php?id=zw
-凤凰资讯 720,http://tv.sason.xyz/proxy/fh.php?id=zx
-凤凰香港 720,http://tv.sason.xyz/proxy/fh.php?id=hk
+凤凰中文,http://[2409:8087:2001:20:2800:0:df6e:eb25]:80/wh7f454c46tw2443888236_158039228/ott.mobaibox.com/PLTV/3/224/3221228527/index.m3u8?
+凤凰中文,http://[2409:8087:2001:20:2800:0:df6e:eb24]/wh7f454c46tw3553140416_-2021535160/ott.mobaibox.com/PLTV/3/224/3221228527/index.m3u8?
+凤凰中文,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002275/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+凤凰中文,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002275/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+凤凰中文,http://211.137.115.109:80/gitv_live/G_FENGHUANGZHONGWEN/G_FENGHUANGZHONGWEN.m3u8
+凤凰中文,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226547/index.m3u8
+凤凰中文,https://live.goodiptv.club/api/sxg.php?id=test1_4000
+凤凰资讯,http://[2409:8087:2001:20:2800:0:df6e:eb27]:80/wh7f454c46tw1890984412_1778241929/ott.mobaibox.com/PLTV/3/224/3221228524/index.m3u8?
+凤凰资讯,http://[2409:8087:2001:20:2800:0:df6e:eb27]/wh7f454c46tw3352677969_1732462333/ott.mobaibox.com/PLTV/3/224/3221228524/index.m3u8?
+凤凰资讯,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002187/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+凤凰资讯,http://zteres.sn.chinamobile.com:6060/yinhe/2/ch00000090990000002187/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+凤凰资讯,http://211.137.115.109:80/gitv_live/G_FENGHUANGZIXUN/G_FENGHUANGZIXUN.m3u8
+凤凰资讯,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226546/index.m3u8
+凤凰资讯,https://live.goodiptv.club/api/sxg.php?id=test2_4000
+
+其他频道,#genre#
+新片放映厅,http://hms184nc1972679575.live.aikan.miguvideo.com/wh7f454c46tw3655704731_-356850043/wd-virtuallive5100030975-150/01.m3u8?msisdn=guest&Channel_ID=0119_04102000-
+99000_400300000040002&client_ip=118.239.16.214&timestamp=20230621215717&ContentId=265218930&timezone=UTC&mtv_session=c19529e8de950b6df1f3f1e044fcd802&HlsSubType=1&HlsProfileId=1&np
+haid=0&encrypt=b2040d05ff4c448b3178bbfb660332f7
+时尚服装,http://player2.juyun.tv/camera/80238159.m3u8
+俄罗斯中文,http://brics.bonus-tv.ru/cdn/brics/chinese/tracks-v1a1/index.m3u8
+峨眉电影,http://xcm13.f3322.net:4000/udp/239.93.0.252:5140
+峨眉电影,http://183.223.157.33:85/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
