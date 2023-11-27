@@ -216,7 +216,6 @@ CCTV17,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226198/index.m3u8
 辽宁都市,http://39.134.61.219/PLTV/88888888/224/3221226914/index.m3u8
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
 辽宁公共,http://httplive.slave.bfgd.com.cn:14311/playurl?
-
 playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000077
 辽宁教育,http://39.134.61.218/PLTV/88888888/224/3221226863/index.m3u8
 辽宁教育,http://42.176.185.28:9901/tsfile/live/1008_1.m3u8
