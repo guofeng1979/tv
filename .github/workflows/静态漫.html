@@ -618,12 +618,19 @@
             <div class="h-12 bg-gray-800/50 border-b border-gray-700 px-4 flex items-center justify-between">
                 <h2 class="font-bold">🎞️ 分镜列表</h2>
                 <div class="flex items-center gap-3 text-sm">
+                    <span id="save-status-indicator" class="text-gray-500 text-xs">自动保存已启用</span>
                     <span id="shot-count" class="text-gray-400">0 个镜头</span>
+                    <button onclick="saveProjectToServer(false)" class="px-3 py-1 bg-green-600 hover:bg-green-700 rounded text-xs font-bold">
+                        💾 保存
+                    </button>
+                    <button onclick="showProjectSelector()" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded text-xs">
+                        📂 加载项目
+                    </button>
                     <button onclick="exportProject()" class="px-3 py-1 bg-gray-700 hover:bg-gray-600 rounded text-xs">
-                        📦 导出项目
+                        📤 导出
                     </button>
                     <button onclick="importProject()" class="px-3 py-1 bg-gray-700 hover:bg-gray-600 rounded text-xs">
-                        📂 导入项目
+                        📥 导入
                     </button>
                     <input type="file" id="import-file" accept=".json" style="display:none">
                 </div>
@@ -4041,7 +4048,7 @@ let pendingEditedBlob = null;
 function openReviewModal(index) {
     currentReviewIndex = index;
     const shot = STATE.shots[index];
-    
+
     // 显示原图
     if (shot.imageBlob) {
         const imageUrl = URL.createObjectURL(shot.imageBlob);
@@ -4049,7 +4056,7 @@ function openReviewModal(index) {
     } else {
         document.getElementById('modal-image-preview').src = shot.imagePath || '';
     }
-    
+
     // 显示原始Prompt
     document.getElementById('modal-current-prompt').value = shot.visual_prompt || shot.imgPrompt || '';
     
@@ -4067,6 +4074,14 @@ function openReviewModal(index) {
     document.getElementById('edit-status-text').textContent = '准备就绪';
     
     document.getElementById('review-modal').classList.remove('hidden');
+
+    // ✅ 自动填充提示词到重新生成输入框（100%生效）
+    setTimeout(() => {
+        const input = document.getElementById('regenerate-prompt');
+        if (input) {
+            input.value = shot.visual_prompt || shot.imgPrompt || '';
+        }
+    }, 300);
 }
 
 function closeReviewModal() {
@@ -4077,7 +4092,6 @@ function closeReviewModal() {
     // 隐藏"确定使用"按钮
     document.getElementById('btn-confirm-edit').classList.add('hidden');
 }
-
 // 处理参考图2上传
 function handleRefImage2Upload(input) {
     const file = input.files[0];
@@ -4108,8 +4122,56 @@ function clearRefImage2() {
     document.getElementById('ref-image-2-input').value = '';
 }
 
-// 应用图片修改（使用FireRed双图编辑工作流）
+// 应用图片修改 支持双图+重新生成
 async function applyImageEdit() {
+    const activeTab = document.querySelector('#panel-regenerate:not(.hidden)') ? 'regenerate' : 
+                      document.querySelector('#panel-angle-adjust:not(.hidden)') ? 'angle' : 'dual';
+
+    if (activeTab === 'regenerate') {
+        const prompt = document.getElementById('regenerate-prompt').value.trim();
+        if (!prompt) {
+            log('warn', '请输入提示词');
+            return;
+        }
+
+        const btn = document.getElementById('btn-apply-edit');
+        const statusText = document.getElementById('edit-status-text');
+        btn.disabled = true;
+        btn.textContent = '⏳ 生成中...';
+        statusText.textContent = '正在重新生成...';
+
+        try {
+            const wf = JSON.parse(JSON.stringify(T2I_WORKFLOWS['qwen2511'].json));
+            const m = T2I_WORKFLOWS['qwen2511'].map;
+            wf[m.seed[0]].inputs[m.seed[1]] = Math.floor(Math.random() * 1e15);
+            wf[m.prompt[0]].inputs[m.prompt[1]] = prompt;
+            
+            const sz = document.getElementById('image-size').value.split('x').map(Number);
+            wf[m.width[0]].inputs[m.width[1]] = sz[0];
+            wf[m.height[0]].inputs[m.height[1]] = sz[1];
+
+            const resultBlob = await executeComfyWorkFlow(wf, 'image');
+            pendingEditedBlob = resultBlob;
+            document.getElementById('modal-image-preview').src = URL.createObjectURL(resultBlob);
+            document.getElementById('btn-confirm-edit').classList.remove('hidden');
+
+            log('success', '✅ 重新生成完成！');
+            statusText.textContent = '重新生成完成！请点击「确定使用」';
+        } catch (e) {
+            log('error', `重新生成失败: ${e.message}`);
+            statusText.textContent = `失败: ${e.message}`;
+        } finally {
+            btn.disabled = false;
+            btn.textContent = '🎨 应用修改';
+        }
+        return;
+    }
+
+    if (activeTab === 'angle') {
+        log('warn', '角度调整功能暂未开发');
+        return;
+    }
+
     if (currentReviewIndex === null) {
         log('error', '未选择要修改的图片');
         return;
@@ -4123,7 +4185,6 @@ async function applyImageEdit() {
         return;
     }
     
-    // 检查原图是否存在
     if (!shot.imageBlob && !shot.imagePath) {
         log('error', '原图不存在，无法修改');
         return;
@@ -4137,7 +4198,6 @@ async function applyImageEdit() {
     statusText.textContent = '正在启动ComfyUI...';
     
     try {
-        // 低显存模式：临时启动ComfyUI
         const isLowVram = document.getElementById('low-vram-mode').checked;
         let comfyuiWasStarted = false;
         
@@ -4152,31 +4212,19 @@ async function applyImageEdit() {
         
         statusText.textContent = '正在上传图片...';
         
-        // 获取原图blob
         let image1Blob = shot.imageBlob;
         if (!image1Blob && shot.imagePath) {
-            // 从服务器获取图片
             const imgRes = await fetch(shot.imagePath);
             image1Blob = await imgRes.blob();
         }
         
-        // 调用双图编辑工作流
         const resultBlob = await callFireRedDualImageEdit(image1Blob, refImage2Blob, editInstruction);
-        
-        // 存储修改后的图片（暂不替换原图）
         pendingEditedBlob = resultBlob;
-        
-        // 更新模态框中的预览（显示新图片）
         document.getElementById('modal-image-preview').src = URL.createObjectURL(resultBlob);
-        
-        // 显示"确定使用"按钮
         document.getElementById('btn-confirm-edit').classList.remove('hidden');
         
         log('success', '✅ 图片修改成功！请点击「确定使用」确认');
         statusText.textContent = '修改完成！请点击「确定使用」确认';
-        
-        // 低显存模式：改图后不关闭ComfyUI，等用户点击"继续生成视频"时再关闭
-        // 这样用户可以连续修改多张图片
         
     } catch (e) {
         log('error', `图片修改失败: ${e.message}`);
@@ -4214,7 +4262,36 @@ function confirmImageEdit() {
     // 关闭模态框
     closeReviewModal();
 }
+// 标签页切换 极简安全版 + 强制填充提示词（必生效）
+function switchEditTab(tab){
+    document.querySelectorAll('#review-modal [id^="tab-"]').forEach(btn=>{
+        btn.className = "px-4 py-2 text-sm font-bold text-gray-400 hover:text-white border-transparent";
+    });
+    const activeBtn = document.getElementById("tab-"+tab+"-edit");
+    if(activeBtn){
+        activeBtn.className = "px-4 py-2 text-sm font-bold text-white bg-purple-600 border-2 border-purple-400 rounded-t-lg";
+    }
 
+    document.getElementById('panel-dual-edit').classList.add('hidden');
+    document.getElementById('panel-angle-adjust').classList.add('hidden');
+    document.getElementById('panel-regenerate').classList.add('hidden');
+
+    const curPanel = document.getElementById('panel-'+tab+'-edit');
+    if(curPanel) curPanel.classList.remove('hidden');
+
+    // ==============================================
+    // ✅ 点到重新生成标签时 → 强制把提示词填进去！
+    // ==============================================
+    if(tab === 'regenerate') {
+        try {
+            const source = document.getElementById('modal-current-prompt');
+            const target = document.getElementById('regenerate-prompt');
+            if(source && target) {
+                target.value = source.value;
+            }
+        } catch(e){}
+    }
+}
 // 调用FireRed双图编辑工作流
 async function callFireRedDualImageEdit(image1Blob, image2Blob, editPrompt) {
     log('info', `🖼️ 调用FireRed双图编辑工作流...`);
@@ -11936,85 +12013,349 @@ ${style}，中国古代北宋时期，中景，正面平视，酒楼厅堂内部
     log('info', '🚀 自动启动步骤2...');
     setTimeout(runStep2, 1000);
 }
+// ==================== 项目保存/加载（完整版，含图片持久化） ====================
+let isSaving = false;
+
+/**
+ * 将Blob上传到服务器并返回存储路径
+ */
+async function uploadImageToServer(imageBlob, projectName, shotIndex, variantIndex = 0) {
+    const formData = new FormData();
+    const filename = variantIndex > 0 
+        ? `shot_${shotIndex}_variant_${variantIndex}.png`
+        : `shot_${shotIndex}.png`;
+    formData.append('image', imageBlob, filename);
+    formData.append('projectName', projectName);
+    formData.append('shotIndex', String(shotIndex));
+    formData.append('imageType', variantIndex > 0 ? 'variant' : 'main');
+    formData.append('variantIndex', String(variantIndex));
+    
+    const res = await fetch(`${CONFIG.composeServer.url}/save_shot_image`, {
+        method: 'POST',
+        body: formData
+    });
+    const data = await res.json();
+    return data.path || null;
+}
+
+/**
+ * 从服务器下载图片
+ */
+async function downloadImageFromServer(projectName, shotIndex, variantIndex = 0) {
+    const path = variantIndex > 0
+        ? `variants/${shotIndex}_${variantIndex}.png`
+        : `image/${String(shotIndex).padStart(3, '0')}.png`;
+    
+    try {
+        const fullPath = `${CONFIG.composeServer.url}/output/${projectName}/${path}`;
+        const res = await fetch(fullPath);
+        if (res.ok) {
+            return await res.blob();
+        }
+    } catch (e) {
+        console.warn(`下载图片失败: ${path}`, e);
+    }
+    return null;
+}
+
+async function saveProjectToServer(isAutoSave = false) {
+    if (isSaving) return;
+    if (!STATE.projectName) {
+        STATE.projectName = `Project_${Date.now()}`;
+    }
+    
+    isSaving = true;
+    if (!isAutoSave) log('info', '💾 正在保存项目（含图片）...');
+    
+    try {
+        // 1. 先逐个上传有图片的分镜图片到服务器
+        let uploadedCount = 0;
+        for (let i = 0; i < STATE.shots.length; i++) {
+            const shot = STATE.shots[i];
+            if (shot.imageBlob) {
+                try {
+                    const path = await uploadImageToServer(shot.imageBlob, STATE.projectName, i);
+                    if (path) {
+                        shot.serverImagePath = path;
+                        uploadedCount++;
+                    }
+                } catch (e) {
+                    console.warn(`上传分镜${i}图片失败:`, e);
+                }
+            }
+            // 上传变体图片
+            if (shot.variants) {
+                for (let v = 0; v < shot.variants.length; v++) {
+                    const variant = shot.variants[v];
+                    if (variant.imageBlob) {
+                        try {
+                            await uploadImageToServer(variant.imageBlob, STATE.projectName, i, v + 1);
+                        } catch (e) {
+                            console.warn(`上传变体${i}_${v}失败:`, e);
+                        }
+                    }
+                }
+            }
+        }
+        
+        // 2. 保存项目JSON元数据
+        const saveData = {
+            projectName: STATE.projectName,
+            currentStep: STATE.currentStep,
+            shots: STATE.shots.map(shot => ({
+                id: shot.id, index: shot.index, text: shot.text, narration: shot.narration,
+                dialogue: shot.dialogue || '', visual_prompt: shot.visual_prompt,
+                hasImage: !!(shot.imageBlob || shot.imagePath || shot.serverImagePath),
+                hasVideo: !!shot.videoBlob,
+                video_prompt: shot.video_prompt,
+                refCharacters: shot.refCharacters || [],
+                refScene: shot.refScene || '',
+                speakers: shot.speakers || [],
+                shot_type: shot.shot_type || '',
+                camera_move: shot.camera_move || '',
+                ltx23_duration: shot.ltx23_duration || 0,
+                ltx23_frame_count: shot.ltx23_frame_count || 121,
+                variantCount: (shot.variants || []).length,
+                imageSlots: shot.imageSlots || {}
+            })),
+            characters: (STATE.characters || []).map(c => ({ name: c.name, tags: c.tags || '', desc_cn: c.desc_cn || '' })),
+            storyText: document.getElementById('input-story')?.value || '',
+            config: {
+                style: document.getElementById('style-desc')?.value || '',
+                context: document.getElementById('context-bg')?.value || ''
+            }
+        };
+        
+        const res = await fetch(`${CONFIG.composeServer.url}/save_project_state`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(saveData)
+        });
+        const result = await res.json();
+        
+        if (result.status === 'ok') {
+            if (!isAutoSave) log('success', `✅ 项目已保存（${uploadedCount}张图片）`);
+        } else {
+            if (!isAutoSave) log('error', '保存失败: ' + result.error);
+        }
+    } catch (e) {
+        if (!isAutoSave) log('error', '保存失败: ' + e.message);
+    }
+    isSaving = false;
+}
+
+async function showProjectSelector() {
+    try {
+        const res = await fetch(`${CONFIG.composeServer.url}/list_projects`);
+        const data = await res.json();
+        const projects = data.projects || [];
+        
+        if (projects.length === 0) {
+            alert('没有已保存的项目');
+            return;
+        }
+        
+        let modal = document.getElementById('project-selector-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'project-selector-modal';
+            modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50';
+            document.body.appendChild(modal);
+        }
+        
+        modal.innerHTML = `
+            <div class="bg-gray-900 rounded-xl p-6 max-w-xl w-full max-h-[80vh] overflow-y-auto">
+                <h3 class="text-xl font-bold text-white mb-4">📂 选择项目</h3>
+                ${projects.map(p => `
+                    <div class="bg-gray-800 rounded-lg p-3 mb-2 flex justify-between items-center">
+                        <div>
+                            <div class="text-white font-bold">${p.name}</div>
+                            <div class="text-xs text-gray-400">${p.shotCount} 个分镜 · 步骤 ${p.currentStep}</div>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="loadSelectedProject('${p.name}')" class="px-3 py-1 bg-blue-600 text-white rounded text-xs">加载</button>
+                            <button onclick="deleteSelectedProject('${p.name}')" class="px-3 py-1 bg-red-600 text-white rounded text-xs">删除</button>
+                        </div>
+                    </div>
+                `).join('')}
+                <button onclick="document.getElementById('project-selector-modal').remove()" class="mt-4 px-4 py-2 bg-gray-700 text-white rounded w-full">关闭</button>
+            </div>
+        `;
+    } catch (e) {
+        alert('加载项目列表失败: ' + e.message);
+    }
+}
+
+async function loadSelectedProject(name) {
+    try {
+        const res = await fetch(`${CONFIG.composeServer.url}/load_project_state`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ projectName: name })
+        });
+        const data = await res.json();
+        
+        if (data.status !== 'ok' || !data.data) {
+            alert('加载失败: 项目数据无效');
+            return;
+        }
+        
+        const proj = data.data;
+        STATE.projectName = name;
+        STATE.shots = proj.shots || [];
+        STATE.characters = proj.characters || [];
+        STATE.currentStep = proj.currentStep || 1;
+        
+        if (proj.config) {
+            document.getElementById('style-desc').value = proj.config.style || '';
+            document.getElementById('context-bg').value = proj.config.context || '';
+        }
+        if (proj.storyText) {
+            document.getElementById('input-story').value = proj.storyText;
+        }
+        
+        // 3. 重新下载图片
+        log('info', '📷 正在从服务器恢复图片...');
+        let restoredCount = 0;
+        for (let i = 0; i < STATE.shots.length; i++) {
+            const shot = STATE.shots[i];
+            if (shot.hasImage) {
+                const blob = await downloadImageFromServer(name, i);
+                if (blob) {
+                    shot.imageBlob = blob;
+                    shot.imagePath = URL.createObjectURL(blob);
+                    restoredCount++;
+                }
+            }
+            // 恢复变体图片
+            if (shot.variantCount > 0) {
+                shot.variants = [];
+                for (let v = 1; v <= shot.variantCount; v++) {
+                    const vBlob = await downloadImageFromServer(name, i, v);
+                    if (vBlob) {
+                        shot.variants.push({
+                            imageBlob: vBlob,
+                            imagePath: URL.createObjectURL(vBlob),
+                            type: 'variant',
+                            index: v
+                        });
+                        restoredCount++;
+                    }
+                }
+            }
+        }
+        
+        renderShots();
+        document.getElementById('btn-step2').disabled = false;
+        const modal = document.getElementById('project-selector-modal');
+        if (modal) modal.remove();
+        log('success', `✅ 已加载项目: ${name}（恢复${restoredCount}张图片）`);
+    } catch (e) {
+        alert('加载失败: ' + e.message);
+    }
+}
+
+async function deleteSelectedProject(name) {
+    if (!confirm(`确定删除项目"${name}"？`)) return;
+    try {
+        await fetch(`${CONFIG.composeServer.url}/delete_project`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ projectName: name })
+        });
+        showProjectSelector();
+    } catch (e) {
+        alert('删除失败: ' + e.message);
+    }
+}
 </script>
 
-<!-- 图片预览与修正模态框（重构版 - 双图编辑） -->
+<!-- 图片预览与修正模态框 -->
 <div id="review-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
     <div class="bg-gray-900 rounded-xl max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col">
+        <!-- 头部标题 + 选项卡 -->
         <div class="flex justify-between items-center p-4 border-b border-gray-700 bg-gradient-to-r from-purple-900/50 to-blue-900/50">
             <div>
                 <h3 class="text-xl font-bold text-white">🖼️ 图片编辑</h3>
-                <p class="text-xs text-gray-400 mt-1">使用FireRed双图编辑工作流修改图片</p>
+                <p class="text-xs text-gray-400 mt-1">选择工作流进行图片编辑</p>
+                <div class="flex mt-2 border-b border-gray-700 pb-0">
+                    <button id="tab-dual-edit" onclick="switchEditTab('dual')" class="px-4 py-2 text-sm font-bold text-white bg-purple-600 border-b-2 border-purple-400 rounded-t-lg">🎨 双图编辑</button>
+                    <button id="tab-angle-adjust" onclick="switchEditTab('angle')" class="px-4 py-2 text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent">📐 角度调整</button>
+                    <button id="tab-regenerate" onclick="switchEditTab('regenerate')" class="px-4 py-2 text-sm font-bold text-gray-400 hover:text-white border-b-2 border-transparent">✨ 重新生成</button>
+                </div>
             </div>
             <button onclick="closeReviewModal()" class="text-gray-400 hover:text-white text-2xl">&times;</button>
         </div>
-        
-        <div class="flex-1 overflow-y-auto p-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <!-- 左侧：原图预览 -->
-                <div class="flex flex-col">
-                    <h4 class="text-sm font-bold text-gray-400 mb-3">📸 原图（参考图1）</h4>
-                    <div class="bg-gray-800 rounded-lg overflow-hidden flex-1 flex items-center justify-center min-h-[300px]">
-                        <img id="modal-image-preview" src="" alt="原图" class="max-w-full max-h-[400px] object-contain">
-                    </div>
-                    <div class="mt-2 text-xs text-gray-500 text-center">此图片将作为编辑的基础图片</div>
+
+        <!-- 中间内容区：原图 + 编辑面板 -->
+        <div class="flex-1 flex">
+            <!-- 左侧：原图 -->
+            <div class="w-1/2 p-4 border-r border-gray-700 flex flex-col">
+                <h4 class="text-sm font-bold text-gray-400 mb-2">📸 原图</h4>
+                <div class="flex-1 bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
+                    <img id="modal-image-preview" src="" alt="原图" class="max-w-full max-h-full object-contain">
                 </div>
-                
-                <!-- 右侧：参考图2上传 -->
-                <div class="flex flex-col">
-                    <h4 class="text-sm font-bold text-gray-400 mb-3">🖼️ 参考图2（可选）</h4>
-                    <div id="ref-image-2-container" class="bg-gray-800 rounded-lg overflow-hidden flex-1 flex items-center justify-center min-h-[300px] cursor-pointer hover:bg-gray-700 transition-colors border-2 border-dashed border-gray-600" onclick="document.getElementById('ref-image-2-input').click()">
+                <div class="mt-2 text-xs text-gray-500 text-center">此图片将作为编辑的基础图片</div>
+            </div>
+
+            <!-- 右侧：双图编辑 / 角度调整 / 重新生成 -->
+            <div class="w-1/2 p-4 flex flex-col">
+                <!-- 双图编辑面板（默认显示） -->
+                <div id="panel-dual-edit" class="flex-1 flex flex-col">
+                    <h4 class="text-sm font-bold text-gray-400 mb-2">🖼️ 参考图（可选）</h4>
+                    <div id="ref-image-2-container" class="bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center min-h-[200px] cursor-pointer hover:bg-gray-700 transition-colors border-2 border-dashed border-gray-600" onclick="document.getElementById('ref-image-2-input').click()">
                         <div id="ref-image-2-placeholder" class="text-center text-gray-500">
-                            <div class="text-4xl mb-2">📷</div>
+                            <div class="text-3xl mb-2">📷</div>
                             <div class="text-sm">点击上传参考图</div>
-                            <div class="text-xs mt-1">例如：环境背景、风格参考等</div>
                         </div>
-                        <img id="ref-image-2-preview" src="" alt="参考图2" class="hidden max-w-full max-h-[400px] object-contain">
+                        <img id="ref-image-2-preview" src="" class="hidden max-w-full max-h-full object-contain">
                     </div>
                     <input type="file" id="ref-image-2-input" accept="image/*" class="hidden" onchange="handleRefImage2Upload(this)">
-                    <div class="mt-2 flex justify-between">
-                        <span class="text-xs text-gray-500">可选：上传环境或风格参考图</span>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-xs text-gray-500">可选：上传参考图</span>
                         <button id="btn-clear-ref-2" onclick="clearRefImage2()" class="text-xs text-red-400 hover:text-red-300 hidden">清除</button>
                     </div>
+                    <div class="mt-4">
+                        <h4 class="text-sm font-bold text-gray-400 mb-2">✏️ 修改指令</h4>
+                        <textarea id="modal-edit-instruction" 
+                            placeholder="请输入修改指令，例如：&#10;• 把背景换成森林&#10;• 让角色穿上红色衣服&#10;• 图1中的角色在图2的环境中行走&#10;• 添加夕阳的光线效果"
+                            class="w-full h-28 bg-gray-700 text-white text-sm rounded-lg p-3 border border-gray-600 focus:border-blue-500 outline-none resize-none"></textarea>
+                    </div>
+                    <details class="mt-4">
+                        <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-300">查看原始Prompt</summary>
+                        <textarea id="modal-current-prompt" readonly 
+                            class="w-full h-20 bg-gray-800 text-gray-400 text-xs rounded-lg p-3 border border-gray-700 resize-none mt-2"></textarea>
+                    </details>
+                </div>
+
+                <!-- 角度调整面板（默认隐藏） -->
+                <div id="panel-angle-adjust" class="flex-1 flex-col hidden">
+                    <h4 class="text-sm font-bold text-gray-400 mb-2">📐 角度调整</h4>
+                    <div id="edit-angle-widget-container" class="bg-gray-800 rounded-lg flex-1" style="min-height:380px;"></div>
+                    <div class="mt-2 text-xs text-gray-500 text-center">拖动球体调整视角和景别</div>
+                </div>
+
+                <!-- 重新生成面板（默认隐藏） -->
+                <div id="panel-regenerate" class="flex-1 flex-col hidden">
+                    <h4 class="text-sm font-bold text-gray-400 mb-2">✨ 重新生成</h4>
+                    <label class="text-xs text-gray-500 mb-1">编辑提示词，点击「应用修改」重新生成</label>
+                    <textarea id="regenerate-prompt" 
+                        placeholder="提示词将自动填入..."
+                        class="w-full h-48 bg-gray-700 text-white text-sm rounded-lg p-3 border border-gray-600 focus:border-green-500 outline-none resize-none"></textarea>
                 </div>
             </div>
-            
-            <!-- 修改指令输入 -->
-            <div class="mt-6">
-                <h4 class="text-sm font-bold text-gray-400 mb-2">✏️ 修改指令</h4>
-                <textarea id="modal-edit-instruction" 
-                    placeholder="请输入修改指令，例如：&#10;• 把背景换成森林&#10;• 让角色穿上红色衣服&#10;• 图1中的角色在图2的环境中行走&#10;• 添加夕阳的光线效果"
-                    class="w-full h-28 bg-gray-700 text-white text-sm rounded-lg p-3 border border-gray-600 focus:border-blue-500 outline-none resize-none"></textarea>
-            </div>
-            
-            <!-- 当前Prompt显示（可折叠） -->
-            <details class="mt-4">
-                <summary class="text-sm text-gray-500 cursor-pointer hover:text-gray-300">查看原始Prompt</summary>
-                <textarea id="modal-current-prompt" readonly 
-                    class="w-full h-20 bg-gray-800 text-gray-400 text-xs rounded-lg p-3 border border-gray-700 resize-none mt-2"></textarea>
-            </details>
         </div>
-        
+
         <!-- 底部操作按钮 -->
         <div class="flex justify-between items-center p-4 border-t border-gray-700 bg-gray-800/50">
             <div class="text-xs text-gray-500">
                 <span id="edit-status-text">准备就绪</span>
             </div>
             <div class="flex gap-3">
-                <button onclick="closeReviewModal()" class="px-6 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg font-bold">
-                    取消
-                </button>
-                <button id="btn-apply-edit" onclick="applyImageEdit()" class="px-6 py-2 bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white rounded-lg font-bold">
-                    🎨 应用修改
-                </button>
-                <button id="btn-confirm-edit" onclick="confirmImageEdit()" class="px-6 py-2 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white rounded-lg font-bold hidden">
-                    ✅ 确定使用
-                </button>
+                <button onclick="closeReviewModal()" class="px-6 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg font-bold">取消</button>
+                <button id="btn-apply-edit" onclick="applyImageEdit()" class="px-6 py-2 bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white rounded-lg font-bold">🎨 应用修改</button>
+                <button id="btn-confirm-edit" onclick="confirmImageEdit()" class="px-6 py-2 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white rounded-lg font-bold hidden">✅ 确定使用</button>
             </div>
         </div>
     </div>
 </div>
-
 <!-- 故事编辑器弹窗 -->
 <div id="story-editor-modal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
     <div class="bg-gray-900 rounded-xl w-[90vw] max-w-[1200px] h-[85vh] overflow-hidden border border-gray-700 shadow-2xl flex flex-col">
